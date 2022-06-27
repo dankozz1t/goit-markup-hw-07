@@ -817,24 +817,24 @@ body {
 
 /* ------------ portfolio ------------ */
 
-.portfolio-section {
+.portfolio {
   padding: 94px 0;
 }
 
-.portfolio-btn {
+.filter {
   margin-bottom: 50px;
 }
 
-.filter-list {
+.filter__list {
   display: flex;
   justify-content: center;
 }
 
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-btn {
+.filter__btn {
   padding: 6px 22px;
 
   border-radius: 4px;
@@ -854,20 +854,20 @@ body {
     box-shadow var(--transition-time) var(--transition-cubic);
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
+.filter__btn:hover,
+.filter__btn:focus {
   color: var(--light-text-cl);
   background-color: var(--accent--bg-cl);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.examples-list {
+.examples__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.example-item {
+.examples__item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -875,34 +875,35 @@ body {
   transition: box-shadow var(--transition-time) var(--transition-cubic);
 }
 
-.example-item:hover,
-.example-item:focus {
+.examples__item:hover,
+.examples__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.example-item:nth-child(3n) {
+.examples__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.example-item:nth-last-child(-n + 3) {
+.examples__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.example-link {
+.examples__link {
   text-decoration: none;
 }
 
-/* .example-img {
-  display: block;
-} */
+.examples__link:hover .examples__info,
+.examples__link:focus .examples__info {
+  transform: translateY(0);
+}
 
-.overlay {
+.examples__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.overlay-text {
+.examples__info {
   position: absolute;
   top: 0;
   left: 0;
@@ -925,18 +926,13 @@ body {
   transition: transform var(--transition-time) var(--transition-cubic);
 }
 
-.example-link:hover .overlay-text,
-.example-link:focus .overlay-text {
-  transform: translateY(0);
-}
-
-.card-border {
+.examples__card {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
 }
 
-.example-title {
+.examples__title {
   margin: 0 0 4px 0;
   font-weight: 700;
   font-size: 18px;
@@ -946,7 +942,7 @@ body {
   color: var(--main-text-cl);
 }
 
-.example-text {
+.examples__text {
   margin: 0;
   font-size: 16px;
   line-height: 1.87;

@@ -18,38 +18,39 @@
 </head>
 
 <body>
+
     <header class="header">
         <div class="container header__container">
             <nav class="header__nav">
                 <a class="logo header__logo" href="./index.html">
                     Web<span class="header__logo--black">Studio</span></a>
 
-                <ul class="list list-nav">
-                    <li class="list-nav__item">
-                        <a class="link list-nav__link" href="./index.html">Studio</a>
+                <ul class="list nav-list">
+                    <li class="nav-list__item">
+                        <a class="link nav-list__link" href="./index.html">Studio</a>
                     </li>
-                    <li class="list-nav__item">
-                        <a class="link list-nav__link list-nav__link--current" href="./portfolio.html">Portfolio</a>
+                    <li class="nav-list__item">
+                        <a class="link nav-list__link  nav-list__link--current" href="./portfolio.html">Portfolio</a>
                     </li>
-                    <li class="list-nav__item">
-                        <a class="link list-nav__link" href="">Contacts</a>
+                    <li class="nav-list__item">
+                        <a class="link nav-list__link" href="">Contacts</a>
                     </li>
                 </ul>
             </nav>
 
-            <ul class="list list-contacts">
-                <li class="list-contacts__item">
-                    <a class="list-contact__link" href="mailto:info@devstudio.com">
-                        <svg class="list-contact__icon" width="16" height="12">
+            <ul class="list contacts-list">
+                <li class="contacts-list__item">
+                    <a class="contacts-list__link" href="mailto:info@devstudio.com">
+                        <svg class="contacts-list__icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>
 
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="list-contacts__item">
-                    <a class="list-contact__link" href="tel:+380961111111">
-                        <svg class="list-contact__icon" width="10" height="16">
+                <li class="contacts-list__item">
+                    <a class="contacts-list__link" href="tel:+380961111111">
+                        <svg class="contacts-list__icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
 
@@ -61,26 +62,26 @@
     </header>
 
     <main>
-        <section class="portfolio-section">
+        <section class="portfolio">
             <div class="container">
-                <div class="portfolio-btn">
+                <div class="filter">
                     <h1 hidden>Examples of our work</h1>
-                    <ul class="filter-list list">
-                        <li class="filter-item"><button class="filter-btn" type="button">All</button></li>
-                        <li class="filter-item"><button class="filter-btn" type="button">Web sites</button></li>
-                        <li class="filter-item"><button class="filter-btn" type="button">Applications</button></li>
-                        <li class="filter-item"><button class="filter-btn" type="button">Design</button></li>
-                        <li class="filter-item"><button class="filter-btn" type="button">Marketing</button></li>
+                    <ul class="list filter__list">
+                        <li class="filter__item"><button class="filter__btn" type="button">All</button></li>
+                        <li class="filter__item"><button class="filter__btn" type="button">Web sites</button></li>
+                        <li class="filter__item"><button class="filter__btn" type="button">Applications</button></li>
+                        <li class="filter__item"><button class="filter__btn" type="button">Design</button></li>
+                        <li class="filter__item"><button class="filter__btn" type="button">Marketing</button></li>
                     </ul>
                 </div>
 
-                <ul class="list examples-list">
-                    <li class="example-item">
-                        <a class="example-link" href="#">
-                            <div class="overlay">
-                                <img class="example-img" src="./images/portfolio-card-1.jpg" alt="laptop with website"
+                <ul class="list examples__list">
+                    <li class="examples__item">
+                        <a class="examples__link" href="#">
+                            <div class="examples__overlay">
+                                <img class="img" src="./images/portfolio-card-1.jpg" alt="laptop with website"
                                     width="370" height="294">
-                                <div class="overlay-text">
+                                <div class="examples__info">
                                     <p>
                                         The resource offers comprehensive offers with different levels
                                         functionality and services. All&nbsp;this&nbsp;will&nbsp;allow the visitor to
@@ -89,40 +90,19 @@
                                 </div>
                             </div>
 
-                            <div class="card-border">
-                                <h2 class="example-title" lang="ua">"Технокряк"</h2>
-                                <p class="example-text">Web sites</p>
+                            <div class="examples__card">
+                                <h2 class="examples__title" lang="ua">"Технокряк"</h2>
+                                <p class="examples__text">Web sites</p>
                             </div>
                         </a>
                     </li>
-                    <li class="example-item">
-                        <a class="example-link" href="#">
-                            <div class="overlay">
-                                <img class="example-img" src="./images/portfolio-card-2.jpg"
-                                    alt="Two men with a basketball" width="370" height="294">
-
-                                <div class="overlay-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Distinctio&nbsp;voluptatem
-                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
-                                        exercitationem et tempore cumque? Dicta, facere. Pariatur, tempore asperiores!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-border">
-                                <h2 class="example-title">Poster New Orlean vs Golden Star</h2>
-                                <p class="example-text">Design</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="example-item">
-                        <a class="example-link" href="#">
-                            <div class="overlay">
-                                <img class="example-img" src="./images/portfolio-card-3.jpg" alt="Restaurant logo"
+                    <li class="examples__item">
+                        <a class="examples__link" href="#">
+                            <div class="examples__overlay">
+                                <img class="img" src="./images/portfolio-card-2.jpg" alt="Two men with a basketball"
                                     width="370" height="294">
 
-                                <div class="overlay-text">
+                                <div class="examples__info">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Distinctio&nbsp;voluptatem
@@ -131,40 +111,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-border">
-                                <h2 class="example-title">Restaurant "Seafood"</h2>
-                                <p class="example-text">Applications</p>
+                            <div class="examples__card">
+                                <h2 class="examples__title">Poster New Orlean vs Golden Star</h2>
+                                <p class="examples__text">Design</p>
                             </div>
                         </a>
                     </li>
-                    <li class="example-item">
-                        <a class="example-link" href="#">
-                            <div class="overlay">
-                                <img class="example-img" src="./images/portfolio-card-4.jpg" alt="Headphones"
-                                    width="370" height="294">
-
-                                <div class="overlay-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Distinctio&nbsp;voluptatem
-                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
-                                        exercitationem et tempore cumque? Dicta, facere. Pariatur, tempore asperiores!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-border">
-                                <h2 class="example-title">Project "Prime"</h2>
-                                <p class="example-text">Marketing</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="example-item">
-                        <a class="example-link" href="#">
-                            <div class="overlay">
-                                <img class="example-img" src="./images/portfolio-card-5.jpg" alt="Two boxes" width="370"
+                    <li class="examples__item">
+                        <a class="examples__link" href="#">
+                            <div class="examples__overlay">
+                                <img class="img" src="./images/portfolio-card-3.jpg" alt="Restaurant logo" width="370"
                                     height="294">
 
-                                <div class="overlay-text">
+                                <div class="examples__info">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Distinctio&nbsp;voluptatem
@@ -173,61 +132,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-border">
-                                <h2 class="example-title">Project "Boxes"</h2>
-                                <p class="example-text">Applications</p>
+                            <div class="examples__card">
+                                <h2 class="examples__title">Restaurant "Seafood"</h2>
+                                <p class="examples__text">Applications</p>
                             </div>
                         </a>
                     </li>
-                    <li class="example-item">
-                        <a class="example-link" href="#">
-                            <div class="overlay">
-                                <img class="example-img" src="./images/portfolio-card-6.jpg" alt="Website monitor"
-                                    width="370" height="294">
-
-                                <div class="overlay-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Distinctio&nbsp;voluptatem
-                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
-                                        exercitationem et tempore cumque? Dicta, facere. Pariatur, tempore asperiores!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-border">
-                                <h2 class="example-title">Inspiration has no Borders</h2>
-                                <p class="example-text">Web sites</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="example-item">
-                        <a class="example-link" href="#">
-                            <div class="overlay">
-                                <img class="example-img" src="./images/portfolio-card-7.jpg" alt="Opened book"
-                                    width="370" height="294">
-
-                                <div class="overlay-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Distinctio&nbsp;voluptatem
-                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
-                                        exercitationem et tempore cumque? Dicta, facere. Pariatur, tempore asperiores!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-border">
-                                <h2 class="example-title">Edition "Limited Edition"</h2>
-                                <p class="example-text">Design</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="example-item">
-                        <a class="example-link" href="#">
-                            <div class="overlay">
-                                <img class="example-img" src="./images/portfolio-card-8.jpg" alt="Logo tag" width="370"
+                    <li class="examples__item">
+                        <a class="examples__link" href="#">
+                            <div class="examples__overlay">
+                                <img class="img" src="./images/portfolio-card-4.jpg" alt="Headphones" width="370"
                                     height="294">
 
-                                <div class="overlay-text">
+                                <div class="examples__info">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Distinctio&nbsp;voluptatem
@@ -236,19 +153,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-border">
-                                <h2 class="example-title">Project "LAB"</h2>
-                                <p class="example-text">Marketing</p>
+                            <div class="examples__card">
+                                <h2 class="examples__title">Project "Prime"</h2>
+                                <p class="examples__text">Marketing</p>
                             </div>
                         </a>
                     </li>
-                    <li class="example-item">
-                        <a class="example-link" href="#">
-                            <div class="overlay">
-                                <img class="example-img" src="./images/portfolio-card-9.jpg"
-                                    alt="Laptop with application" width="370" height="294">
+                    <li class="examples__item">
+                        <a class="examples__link" href="#">
+                            <div class="examples__overlay">
+                                <img class="img" src="./images/portfolio-card-5.jpg" alt="Two boxes" width="370"
+                                    height="294">
 
-                                <div class="overlay-text">
+                                <div class="examples__info">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Distinctio&nbsp;voluptatem
@@ -257,9 +174,93 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-border">
-                                <h2 class="example-title">Growing Business</h2>
-                                <p class="example-text">Applications</p>
+                            <div class="examples__card">
+                                <h2 class="examples__title">Project "Boxes"</h2>
+                                <p class="examples__text">Applications</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="examples__item">
+                        <a class="examples__link" href="#">
+                            <div class="examples__overlay">
+                                <img class="img" src="./images/portfolio-card-6.jpg" alt="Website monitor" width="370"
+                                    height="294">
+
+                                <div class="examples__info">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Distinctio&nbsp;voluptatem
+                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
+                                        exercitationem et tempore cumque? Dicta, facere. Pariatur, tempore asperiores!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="examples__card">
+                                <h2 class="examples__title">Inspiration has no Borders</h2>
+                                <p class="examples__text">Web sites</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="examples__item">
+                        <a class="examples__link" href="#">
+                            <div class="examples__overlay">
+                                <img class="img" src="./images/portfolio-card-7.jpg" alt="Opened book" width="370"
+                                    height="294">
+
+                                <div class="examples__info">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Distinctio&nbsp;voluptatem
+                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
+                                        exercitationem et tempore cumque? Dicta, facere. Pariatur, tempore asperiores!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="examples__card">
+                                <h2 class="examples__title">Edition "Limited Edition"</h2>
+                                <p class="examples__text">Design</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="examples__item">
+                        <a class="examples__link" href="#">
+                            <div class="examples__overlay">
+                                <img class="img" src="./images/portfolio-card-8.jpg" alt="Logo tag" width="370"
+                                    height="294">
+
+                                <div class="examples__info">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Distinctio&nbsp;voluptatem
+                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
+                                        exercitationem et tempore cumque? Dicta, facere. Pariatur, tempore asperiores!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="examples__card">
+                                <h2 class="examples__title">Project "LAB"</h2>
+                                <p class="examples__text">Marketing</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="examples__item">
+                        <a class="examples__link" href="#">
+                            <div class="examples__overlay">
+                                <img class="img" src="./images/portfolio-card-9.jpg" alt="Laptop with application"
+                                    width="370" height="294">
+
+                                <div class="examples__info">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Distinctio&nbsp;voluptatem
+                                        dolorum, molestias dolor sunt sit adipisci debitis, earum eaque illum vero
+                                        exercitationem et tempore cumque? Dicta, facere. Pariatur, tempore asperiores!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="examples__card">
+                                <h2 class="examples__title">Growing Business</h2>
+                                <p class="examples__text">Applications</p>
                             </div>
                         </a>
                     </li>
@@ -267,6 +268,7 @@
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="container footer__container">
             <div class="footer__info">
