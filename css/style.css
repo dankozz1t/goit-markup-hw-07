@@ -1,24 +1,37 @@
 :root {
-  /* color */
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --white-color: #ffffff;
-  --primary-white-color: #e5e5e5;
-  --primary-background-color: #2f303a;
-  --section-background-color: #f5f4fa;
-  --accent-color: #2196f3;
+  /* Fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Text colors */
+  --main-text-cl: #212121;
+  --secondary-text-cl: #757575;
+  --accent--text-cl: #2196f3;
+  --light-text-cl: #ffffff;
+
+  /* Background colors */
+
+  --main-bg-cl: #ffffff;
+  --secondary-bg-cl: #2f303a;
+
+  --primary-section-bg-cl: #f5f4fa;
+  --accent--bg-cl: #2196f3;
+
+  /* Other colors */
   --address-color: rgba(255, 255, 255, 0.6);
   --icon-color: #afb1b8;
 
-  /* transition */
+  /* Other visuals vars */
+
+  /* Transition */
   --transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-time: 250ms;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--title-text-color);
-  background: var(--white-color);
+  color: var(--main-text-cl);
+  background: var(--main-bg-cl);
 }
 
 img {
@@ -42,7 +55,7 @@ img {
 
 .link:hover,
 .link:focus {
-  color: var(--accent-color);
+  color: var(--accent--text-cl);
 }
 
 .section-title {
@@ -88,8 +101,8 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  color: var(--light-text-cl);
+  background-color: var(--accent--bg-cl);
   cursor: pointer;
 }
 
@@ -103,7 +116,7 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
 
-  color: var(--accent-color);
+  color: var(--accent--text-cl);
 }
 
 .logo-second-black {
@@ -111,7 +124,7 @@ img {
 }
 
 .logo-second-white {
-  color: var(--white-color);
+  color: var(--light-text-cl);
 }
 
 .flex {
@@ -143,11 +156,11 @@ img {
 .nav-link {
   position: relative;
 
-  color: var(--title-text-color);
+  color: var(--main-text-cl);
 }
 
 .header .link.current {
-  color: var(--accent-color);
+  color: var(--accent--text-cl);
 }
 
 .header .link.current::after {
@@ -158,7 +171,7 @@ img {
   bottom: -33px;
   width: 100%;
   height: 4px;
-  background-color: var(--accent-color);
+  background-color: var(--accent--bg-cl);
   border-radius: 2px;
 
   transition: color var(--transition-time) var(--transition-cubic);
@@ -184,16 +197,16 @@ img {
 
   text-decoration: none;
 
-  color: var(--primary-text-color);
-  fill: var(--primary-text-color);
+  color: var(--secondary-text-cl);
+  fill: var(--secondary-text-cl);
 
   transition: color var(--transition-time) var(--transition-cubic);
 }
 
 .contact-link:hover,
 .contact-link:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  color: var(--accent--text-cl);
+  fill: var(--accent--text-cl);
 }
 
 .icon {
@@ -209,8 +222,8 @@ img {
   padding: 200px 0px;
   margin: 0 auto;
 
-  color: var(--white-color);
-  background-color: var(--primary-background-color);
+  color: var(--light-text-cl);
+  background-color: var(--secondary-bg-cl);
 
   background-image: linear-gradient(
       to right,
@@ -241,8 +254,8 @@ img {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  color: var(--accent-color);
-  background-color: var(--white-color);
+  color: var(--accent--text-cl);
+  background-color: var(--main-bg-cl);
 }
 
 /* ------------ modal ------------ */
@@ -277,7 +290,7 @@ img {
 
   padding: 15px;
 
-  background-color: var(--white-color);
+  background-color: var(--main-bg-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -294,7 +307,7 @@ img {
   border-radius: 50% 50%;
   cursor: pointer;
 
-  background-color: var(--white-color);
+  background-color: var(--main-bg-cl);
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   transition: fill var(--transition-time) var(--transition-cubic),
@@ -303,8 +316,8 @@ img {
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
+  fill: var(--accent--text-cl);
+  border-color: var(--accent--text-cl);
 }
 
 .icon-close {
@@ -316,7 +329,7 @@ img {
 
 /* form */
 .form {
-  color: var(--title-text-color);
+  color: var(--main-text-cl);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -339,15 +352,15 @@ img {
 }
 
 .form-field:focus-within .form-label {
-  color: var(--accent-color);
+  color: var(--accent--text-cl);
 }
 
 .form-field:focus-within .form-input {
-  border-color: var(--accent-color);
+  border-color: var(--accent--text-cl);
 }
 
 .form-field:focus-within .input-icon {
-  fill: var(--accent-color);
+  fill: var(--accent--text-cl);
 }
 
 .form-label {
@@ -356,7 +369,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.01em;
 
-  color: var(--primary-text-color);
+  color: var(--secondary-text-cl);
 }
 
 .form-input {
@@ -400,7 +413,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: var(--primary-text-color);
+  color: var(--secondary-text-cl);
 }
 
 .icon-check {
@@ -411,13 +424,13 @@ img {
   height: 15px;
   margin: 0 7px 0 0;
 
-  fill: var(--white-color);
-  border: 2px solid var(--primary-background-color);
+  fill: var(--light-text-cl);
+  border: 2px solid var(--secondary-bg-cl);
   border-radius: 2px;
 }
 
 .checkbox:checked + .icon-check {
-  background-color: var(--accent-color);
+  background-color: var(--accent--bg-cl);
   border: transparent;
 
   transition: transform var(--transition-time) var(--transition-cubic);
@@ -429,7 +442,7 @@ img {
 }
 
 .form-link {
-  color: var(--accent-color);
+  color: var(--accent--text-cl);
 }
 
 /* button submit */
@@ -473,7 +486,7 @@ img {
   margin: 0 0 30px 0;
 
   border-radius: 4px;
-  background-color: var(--section-background-color);
+  background-color: var(--primary-section-bg-cl);
 }
 
 .features-title {
@@ -493,7 +506,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: var(--primary-text-color);
+  color: var(--secondary-text-cl);
 }
 
 /* ------------ presentation ------------ */
@@ -538,18 +551,18 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
 
-  color: var(--white-color);
+  color: var(--light-text-cl);
   background: rgba(47, 48, 58, 0.8);
 }
 
 /* ------------ our teams ------------ */
 .section-teams {
-  background-color: var(--section-background-color);
+  background-color: var(--primary-section-bg-cl);
   padding: 94px 0;
 }
 
 .team-item {
-  background-color: var(--white-color);
+  background-color: var(--main-bg-cl);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -572,7 +585,7 @@ img {
   letter-spacing: 0.03em;
   font-weight: 500;
 
-  color: var(--title-text-color);
+  color: var(--main-text-cl);
 }
 
 .teams-text {
@@ -583,7 +596,7 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
 
-  color: var(--primary-text-color);
+  color: var(--secondary-text-cl);
 }
 
 .teams-social {
@@ -619,8 +632,8 @@ img {
 .teams-link:hover,
 .teams-link:focus {
   border-radius: 50%;
-  background-color: var(--accent-color);
-  fill: var(--white-color);
+  background-color: var(--accent--bg-cl);
+  fill: var(--light-text-cl);
 }
 
 /* ------------  section-customers  ------------ */
@@ -655,8 +668,8 @@ img {
 
 .customer-link:hover,
 .customer-link:focus {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
+  fill: var(--accent--text-cl);
+  border-color: var(--accent--text-cl);
 }
 
 .customer-item:not(:last-child) {
@@ -666,7 +679,7 @@ img {
 /* ------------ footer ------------ */
 .footer {
   padding: 60px 0;
-  background-color: var(--primary-background-color);
+  background-color: var(--secondary-bg-cl);
 }
 
 .footer-nav {
@@ -681,7 +694,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
 
-  color: var(--white-color);
+  color: var(--light-text-cl);
 }
 
 .footer .container .logo {
@@ -697,7 +710,7 @@ img {
 }
 
 .address-white {
-  color: var(--white-color);
+  color: var(--light-text-cl);
 }
 
 .address-color {
@@ -734,14 +747,14 @@ img {
 
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--white-color);
+  fill: var(--light-text-cl);
 
   transition: background-color var(--transition-time) var(--transition-cubic);
 }
 
 .join-link:hover,
 .join-link:focus {
-  background-color: var(--accent-color);
+  background-color: var(--accent--bg-cl);
 }
 
 /* footer-newsletter */
@@ -759,7 +772,7 @@ img {
   width: 358px;
   height: 50px;
 
-  color: var(--white-color);
+  color: var(--light-text-cl);
   background: transparent;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -770,7 +783,7 @@ img {
 }
 
 .newsletter-email:focus-within {
-  border-color: var(--accent-color);
+  border-color: var(--accent--text-cl);
 }
 
 .newsletter-btn-title {
@@ -788,16 +801,16 @@ img {
   align-items: center;
   text-align: center;
 
-  fill: var(--white-color);
+  fill: var(--light-text-cl);
   transition: color var(--transition-time) var(--transition-cubic),
     background-color var(--transition-time) var(--transition-cubic);
 }
 
 .newsletter-btn:hover,
 .newsletter-btn:focus {
-  color: var(--accent-color);
-  background-color: var(--white-color);
-  fill: var(--accent-color);
+  fill: var(--accent--text-cl);
+  color: var(--accent--text-cl);
+  background-color: var(--main-bg-cl);
 }
 
 /* ------------ portfolio ------------ */
@@ -830,8 +843,8 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  color: var(--title-text-color);
-  background-color: var(--section-background-color);
+  color: var(--main-text-cl);
+  background-color: var(--primary-section-bg-cl);
   cursor: pointer;
 
   transition: color var(--transition-time) var(--transition-cubic),
@@ -841,8 +854,8 @@ img {
 
 .filter-btn:hover,
 .filter-btn:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  color: var(--light-text-cl);
+  background-color: var(--accent--bg-cl);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -904,7 +917,7 @@ img {
   padding-left: 24px;
   height: 100%;
 
-  color: var(--white-color);
+  color: var(--light-text-cl);
   background-color: rgba(33, 150, 243, 0.9);
 
   transition: transform var(--transition-time) var(--transition-cubic);
@@ -928,7 +941,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  color: var(--title-text-color);
+  color: var(--main-text-cl);
 }
 
 .example-text {
@@ -937,5 +950,5 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
 
-  color: var(--primary-text-color);
+  color: var(--main-text-cl);
 }
