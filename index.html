@@ -19,8 +19,8 @@
 
 <body>
     <header class="header">
-        <div class="header__container container">
-            <nav class="main-nav">
+        <div class="container header__container">
+            <nav class="header__nav">
                 <a class="logo header__logo" href="./index.html">
                     Web<span class="header__logo--black">Studio</span></a>
 
@@ -364,52 +364,54 @@
     </main>
 
     <footer class="footer">
-        <div class="container flex">
-            <div class="footer-nav">
-                <a class="logo" href="./index.html">
-                    Web<span class="logo-second-white">Studio</span></a>
+        <div class="container footer__container">
+            <div class="footer__info">
+                <a class="logo footer__logo" href="./index.html">
+                    Web<span class="footer__logo--white">Studio</span></a>
+
                 <address class="address">
                     <ul class="list">
-                        <li class="address-item">
-                            <a class="link address-white" href="https://goo.gl/maps/E6a8A6PKzvvzx87p6" target="_blank"
-                                rel="noopener noreferrer">
+                        <li class="address__item">
+                            <a class="link address__link--white" href="https://goo.gl/maps/E6a8A6PKzvvzx87p6"
+                                target="_blank" rel="noopener noreferrer">
                                 Kyiv, Lesi Ukrainky Blvd, 26, Kyiv</a>
                         </li>
-                        <li class="address-item">
-                            <a class="link address-color" href="mailto:info@example.com">info@example.com</a>
+                        <li class="address__item">
+                            <a class="link address__link--grey" href="mailto:info@example.com">info@example.com</a>
                         </li>
-                        <li class="address-item">
-                            <a class="link address-color" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li class="address__item">
+                            <a class="link address__link--grey" href="tel:+380991111111">+38 099 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
-            <div class="footer-social">
-                <h2 class="footer-title">FOLLOW US</h2>
-                <ul class="join-social">
-                    <li class="join-item">
-                        <a class="join-link" href="">
+
+            <div class="follow">
+                <h2 class="footer__title">FOLLOW US</h2>
+                <ul class="list follow__list">
+                    <li class="follow__item">
+                        <a class="follow__link" href="">
                             <svg width="20" height="20" aria-label="instagram">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="join-item">
-                        <a class="join-link" href="">
+                    <li class="follow__item">
+                        <a class="follow__link" href="">
                             <svg width="20" height="20" aria-label="twitter">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="join-item">
-                        <a class="join-link" href="">
+                    <li class="follow__item">
+                        <a class="follow__link" href="">
                             <svg width="20" height="20" aria-label="facebook">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="join-item">
-                        <a class="join-link" href="">
+                    <li class="follow__item">
+                        <a class="follow__link" href="">
                             <svg width="20" height="20" aria-label="linkedin">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
@@ -418,14 +420,14 @@
                 </ul>
             </div>
 
-            <form class="footer-newsletter">
-                <h2 class="footer-title">SUBSCRIBE TO NEWSLETTER</h2>
+            <form class="newsletter">
+                <h2 class="footer__title">SUBSCRIBE TO NEWSLETTER</h2>
 
-                <div class="newsletter-box">
-                    <input required type="email" class="newsletter-email" name="email" placeholder="E-mail" />
+                <div class="newsletter__box">
+                    <input class="newsletter__email" required type="email" name="email" placeholder="E-mail" />
 
-                    <button type="submit" class="btn newsletter-btn">
-                        <span class="newsletter-btn-title">Subscribe</span>
+                    <button class="btn newsletter__btn" type="submit">
+                        <span class="newsletter__title">Subscribe</span>
                         <svg width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
@@ -433,62 +435,65 @@
                 </div>
             </form>
         </div>
+
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-close-btn" data-modal-close type="button">
-                <svg class="icon-close" width="11" height="11" aria-label="close">
+            <button class="modal__close" data-modal-close type="button">
+                <svg class="modal__icon" width="11" height="11" aria-label="close">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
 
             <form class="form">
-                <h1 class="form-title">
+                <h1 class="form__title">
                     Leave your details, we will call you back
                 </h1>
-                <div class="form-field">
-                    <label class="form-label" for="name">Name</label>
-                    <input class="form-input form-required" type="text" required name="name" id="name" autofocus />
-                    <svg class="input-icon" width="18" height="18">
+                <div class="form__field">
+                    <label class="form__label" for="name">Name</label>
+                    <input class="form__input form__required" type="text" required name="name" id="name" autofocus />
+                    <svg class="form__icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-person"></use>
                     </svg>
                 </div>
-                <div class="form-field">
-                    <label class="form-label" for="tel">Phone</label>
-                    <input class="form-input form-required" type="tel" required name="tel" id="tel" />
-                    <svg class="input-icon" width="18" height="18">
+                <div class="form__field">
+                    <label class="form__label" for="tel">Phone</label>
+                    <input class="form__input form__required" type="tel" required name="tel" id="tel" />
+                    <svg class="form__icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
                 </div>
 
-                <div class="form-field">
-                    <label class="form-label" for="mail">Email</label>
-                    <input class="form-input form-required" type="email" required name="email" id="mail" />
-                    <svg class="input-icon" width="18" height="18">
+                <div class="form__field">
+                    <label class="form__label" for="mail">Email</label>
+                    <input class="form__input form__required" type="email" required name="email" id="mail" />
+                    <svg class="form__icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-email"></use>
                     </svg>
                 </div>
 
-                <div class="form-field">
-                    <label class="form-label" for="comment">Comment</label>
-                    <textarea class="form-input form-comment" name="comment" id="comment" rows="8"
+                <div class="form__field">
+                    <label class="form__label" for="comment">Comment</label>
+                    <textarea class="form__input form__comment" name="comment" id="comment" rows="8"
                         placeholder="Enter text"></textarea>
                 </div>
 
-                <div class="form-field">
-                    <label class="polity-label" for="policy">
-                        <input class="visually-hidden checkbox" required type="checkbox" name="policy" id="policy" />
-                        <span class="icon-check">
+                <div class="form__field">
+                    <label class="form__polity-label" for="policy">
+                        <input class="visually-hidden form__checkbox" required type="checkbox" name="policy"
+                            id="policy" />
+                        <span class="form__icon--check">
                             <svg width="16" height="15">
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                         </span>
                         <span>I agree to the newsletter and accept the</span>
-                        <a class="form-link" href="">Terms of an agreement</a>
+                        <a class="form__link" href="">Terms of an agreement</a>
                     </label>
                 </div>
 
-                <button class="form-send-btn btn" data-modal-open type="submit">
+                <button class="btn form__send" data-modal-open type="submit">
                     Send
                 </button>
             </form>
