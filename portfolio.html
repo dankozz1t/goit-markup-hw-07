@@ -19,8 +19,8 @@
 
 <body>
     <header class="header">
-        <div class="header__container container">
-            <nav class="main-nav">
+        <div class="container header__container">
+            <nav class="header__nav">
                 <a class="logo header__logo" href="./index.html">
                     Web<span class="header__logo--black">Studio</span></a>
 
@@ -29,7 +29,7 @@
                         <a class="link list-nav__link" href="./index.html">Studio</a>
                     </li>
                     <li class="list-nav__item">
-                        <a class="link list-nav__link " href="./portfolio.html">Portfolio</a>
+                        <a class="link list-nav__link list-nav__link--current" href="./portfolio.html">Portfolio</a>
                     </li>
                     <li class="list-nav__item">
                         <a class="link list-nav__link" href="">Contacts</a>
@@ -268,52 +268,54 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container flex">
-            <div class="footer-nav">
-                <a class="logo" href="./index.html">
-                    Web<span class="logo-second-white">Studio</span></a>
+        <div class="container footer__container">
+            <div class="footer__info">
+                <a class="logo footer__logo" href="./index.html">
+                    Web<span class="footer__logo--white">Studio</span></a>
+
                 <address class="address">
                     <ul class="list">
-                        <li class="address-item">
-                            <a class="link address-white" href="https://goo.gl/maps/E6a8A6PKzvvzx87p6" target="_blank"
-                                rel="noopener noreferrer">
+                        <li class="address__item">
+                            <a class="link address__link--white" href="https://goo.gl/maps/E6a8A6PKzvvzx87p6"
+                                target="_blank" rel="noopener noreferrer">
                                 Kyiv, Lesi Ukrainky Blvd, 26, Kyiv</a>
                         </li>
-                        <li class="address-item">
-                            <a class="link address-color" href="mailto:info@example.com">info@example.com</a>
+                        <li class="address__item">
+                            <a class="link address__link--grey" href="mailto:info@example.com">info@example.com</a>
                         </li>
-                        <li class="address-item">
-                            <a class="link address-color" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li class="address__item">
+                            <a class="link address__link--grey" href="tel:+380991111111">+38 099 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
-            <div class="footer-social">
-                <h2 class="footer-title">FOLLOW US</h2>
-                <ul class="join-social">
-                    <li class="join-item">
-                        <a class="join-link" href="">
+
+            <div class="follow">
+                <h2 class="footer__title">FOLLOW US</h2>
+                <ul class="list follow__list">
+                    <li class="follow__item">
+                        <a class="follow__link" href="">
                             <svg width="20" height="20" aria-label="instagram">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="join-item">
-                        <a class="join-link" href="">
+                    <li class="follow__item">
+                        <a class="follow__link" href="">
                             <svg width="20" height="20" aria-label="twitter">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="join-item">
-                        <a class="join-link" href="">
+                    <li class="follow__item">
+                        <a class="follow__link" href="">
                             <svg width="20" height="20" aria-label="facebook">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="join-item">
-                        <a class="join-link" href="">
+                    <li class="follow__item">
+                        <a class="follow__link" href="">
                             <svg width="20" height="20" aria-label="linkedin">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
@@ -322,14 +324,14 @@
                 </ul>
             </div>
 
-            <form class="footer-newsletter">
-                <h2 class="footer-title">SUBSCRIBE TO NEWSLETTER</h2>
+            <form class="newsletter">
+                <h2 class="footer__title">SUBSCRIBE TO NEWSLETTER</h2>
 
-                <div class="newsletter-box">
-                    <input required type="email" class="newsletter-email" name="email" placeholder="E-mail" />
+                <div class="newsletter__box">
+                    <input class="newsletter__email" required type="email" name="email" placeholder="E-mail" />
 
-                    <button type="submit" class="btn newsletter-btn">
-                        <span class="newsletter-btn-title">Subscribe</span>
+                    <button class="btn newsletter__btn" type="submit">
+                        <span class="newsletter__title">Subscribe</span>
                         <svg width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
@@ -337,6 +339,7 @@
                 </div>
             </form>
         </div>
+
     </footer>
 
 </body>
