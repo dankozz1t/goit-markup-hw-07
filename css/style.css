@@ -29,7 +29,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font);
   color: var(--main-text-cl);
   background: var(--main-bg-cl);
 }
@@ -109,7 +109,7 @@ img {
 /* ------------ logo ------------ */
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
