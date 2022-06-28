@@ -656,7 +656,7 @@ body {
   transition: transform var(--transition-time) var(--transition-cubic);
 }
 
-.modal__close {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -672,8 +672,8 @@ body {
     border-color var(--transition-time) var(--transition-cubic);
 }
 
-.modal__close:hover,
-.modal__close:focus {
+.modal__close-btn:hover,
+.modal__close-btn:focus {
   fill: var(--accent--text-cl);
   border-color: var(--accent--text-cl);
 }
